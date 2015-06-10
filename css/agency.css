@@ -3,7 +3,13 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+@font-face {
+  font-family: 'olivier';
+  src: url('../fonts/olivier-demo-0.ttf');
+  src: url('../fonts/olivier-demo-0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -14,7 +20,7 @@ body {
 }
 
 .text-primary {
-    color: #D46697;
+    color: #FCA1AC;
 }
 
 p {
@@ -35,14 +41,14 @@ a.active {
 }
 
 a {
-    color: #D46697;
+    color: #FCA1AC;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #D46697;
+    color: #FCA1AC;
 }
 
 h1,
@@ -69,12 +75,12 @@ h6 {
 }
 
 .btn-primary {
-    border-color: #D46697;
+    border-color: #FCA1AC;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: #D46697;
+    background-color: #FCA1AC;
 }
 
 .btn-primary:hover,
@@ -84,7 +90,7 @@ h6 {
 .open .dropdown-toggle.btn-primary {
     border-color: #f6bf01;
     color: #fff;
-    background-color: #D46697;
+    background-color: #FCA1AC;
 }
 
 .btn-primary:active,
@@ -108,25 +114,26 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #D46697;
-    background-color: #D46697;
+    border-color: #FCA1AC;
+    background-color: #FCA1AC;
 }
 
 .btn-primary .badge {
-    color: #D46697;
+    color: #FCA1AC;
     background-color: #fff;
 }
 
 .btn-xl {
     padding: 20px 40px;
-    border-color: #D46697;
+    border-color: #FCA1AC;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #D46697;
+    text-shadow: 0px 0, 0 0px, 0px 0, 0 0px;
+    background-color: #FCA1AC;
 }
 
 .btn-xl:hover,
@@ -134,9 +141,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #0F98C4;
+    border-color: #85C0D0;
     color: #fff;
-    background-color: #0F98C4;
+    background-color: #85C0D0;
 }
 
 .btn-xl:active,
@@ -160,12 +167,12 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #D46697;
-    background-color: #D46697;
+    border-color: #FCA1AC;
+    background-color: #FCA1AC;
 }
 
 .btn-xl .badge {
-    color: #D46697;
+    color: #FCA1AC;
     background-color: #fff;
 }
 
@@ -175,15 +182,17 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #D46697;
+    font-family: olivier,"Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #0F98C4;
+    
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #0F98C4;
+    color: #FCA1AC;
+    text-shadow: -1px 0 #D46697, 0 1px #D46697, 1px 0 #D46697, 0 -1px #D46697;
 }
 
 .navbar-default .navbar-collapse {
@@ -191,17 +200,17 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #D46697;
-    background-color: #D46697;
+    border-color: #FCA1AC;
+    background-color: #FCA1AC;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #0F98C4;
+    background-color: #85C0D0;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #D46697;
+    background-color: #FCA1AC;
 }
 
 .navbar-default .nav li a {
@@ -209,25 +218,28 @@ fieldset[disabled] .btn-xl.active {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #D46697;
+    color: #FFF;
+    text-shadow: -1px 0 #0F98C4, 0 1px #0F98C4, 1px 0 #0F98C4, 0 -1px #0F98C4;
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #0F98C4;
+    color: #FCA1AC;
+    text-shadow: -1px 0 #D46697, 0 1px #D46697, 1px 0 #D46697, 0 -1px #D46697;
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #FFF;
-    background-color: #D46697;
+    text-shadow: 0px 0 #D46697, 0 1px #D46697, 1px 0 #D46697, 0 -1px #D46697;
+    background-color: #FCA1AC;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #FFF;
-    background-color: #D46697;
+    background-color: #FCA1AC;
 }
 
 @media(min-width:768px) {
@@ -241,7 +253,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .navbar-brand {
-        font-size: 2em;
+        font-size: 3em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -257,13 +269,14 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 2.5em;
     }
 }
 
 header {
     text-align: center;
-    color: #0F98C4;
+    color: #85C0D0;
+    text-shadow: -1px 0 #0F98C4, 0 2px #0F98C4, 1px 0 #0F98C4, 0 -1px #0F98C4;
     font-weight: 600;
     background-attachment: scroll;
     background-image: url(../img/header-bg.jpg);
@@ -276,7 +289,7 @@ header {
 }
 
 header .intro-text {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 50px;
 }
 
@@ -299,7 +312,7 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 100px;
         padding-bottom: 200px;
     }
 
@@ -386,7 +399,7 @@ section h3.section-subheading {
     margin-top: -12px;
     text-align: center;
     font-size: 20px;
-    color: #0F98C4;
+    color: #85C0D0;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
@@ -403,7 +416,7 @@ section h3.section-subheading {
     padding: 25px;
     max-width: 400px;
     text-align: center;
-    background-color: #0F98C4;
+    background-color: #85C0D0;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
@@ -442,7 +455,7 @@ section h3.section-subheading {
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
-    background-color: #0F98C4;
+    background-color: #85C0D0;
 }
 
 .timeline>li {
@@ -490,11 +503,11 @@ section h3.section-subheading {
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 7px solid #0F98C4;
+    border: 7px solid #85C0D0;
     border-radius: 100%;
     text-align: center;
     color: #FFF;
-    background-color: #D46697;
+    background-color: #FCA1AC;
 }
 
 .timeline>li .timeline-image h4 {
@@ -635,7 +648,7 @@ section h3.section-subheading {
 
 .team-member img {
     margin: 0 auto;
-    border: 7px solid #0F98C4;
+    border: 7px solid #85C0D0;
 }
 
 .team-member h4 {
@@ -660,7 +673,7 @@ section#contact {
 }
 
 section#contact .section-heading {
-    color: #0F98C4;
+    color: #85C0D0;
 }
 
 section#contact .form-group {
@@ -681,7 +694,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-    border-color: #D46697;
+    border-color: #FCA1AC;
     box-shadow: none;
 }
 
@@ -749,7 +762,7 @@ ul.social-buttons li a {
     font-size: 20px;
     line-height: 40px;
     outline: 0;
-    color: #0F98C4;
+    color: #85C0D0;
     background-color: #222;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -759,7 +772,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #D46697;
+    background-color: #FCA1AC;
 }
 
 .btn:focus,
@@ -847,12 +860,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #D46697;
+    background: #FCA1AC;
 }
 
 ::selection {
     text-shadow: none;
-    background: #D46697;
+    background: #FCA1AC;
 }
 
 img::selection {
@@ -864,5 +877,5 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #D46697;
+    webkit-tap-highlight-color: #FCA1AC;
 }
