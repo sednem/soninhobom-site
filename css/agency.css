@@ -442,7 +442,7 @@ section h3.section-subheading {
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
-    background-color: #f1f1f1;
+    background-color: #0F98C4;
 }
 
 .timeline>li {
@@ -490,10 +490,10 @@ section h3.section-subheading {
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 7px solid #f1f1f1;
+    border: 7px solid #0F98C4;
     border-radius: 100%;
     text-align: center;
-    color: #0F98C4;
+    color: #FFF;
     background-color: #D46697;
 }
 
